@@ -4944,6 +4944,14 @@ video {
   background-image: url('assets/img/tyler.jpg');
 }
 
+.bg-blog-image-1 {
+  background-image: url('assets/img/blogImage1.jpg');
+}
+
+.bg-blog-image-2 {
+  background-image: url('assets/img/blogImage2.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -39522,6 +39530,14 @@ video {
     background-image: url('assets/img/tyler.jpg');
   }
 
+  .sm\:bg-blog-image-1 {
+    background-image: url('assets/img/blogImage1.jpg');
+  }
+
+  .sm\:bg-blog-image-2 {
+    background-image: url('assets/img/blogImage2.jpg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -74055,6 +74071,14 @@ video {
 
   .md\:bg-headshot {
     background-image: url('assets/img/tyler.jpg');
+  }
+
+  .md\:bg-blog-image-1 {
+    background-image: url('assets/img/blogImage1.jpg');
+  }
+
+  .md\:bg-blog-image-2 {
+    background-image: url('assets/img/blogImage2.jpg');
   }
 
   .md\:from-transparent {
@@ -108592,6 +108616,14 @@ video {
     background-image: url('assets/img/tyler.jpg');
   }
 
+  .lg\:bg-blog-image-1 {
+    background-image: url('assets/img/blogImage1.jpg');
+  }
+
+  .lg\:bg-blog-image-2 {
+    background-image: url('assets/img/blogImage2.jpg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -143127,6 +143159,14 @@ video {
     background-image: url('assets/img/tyler.jpg');
   }
 
+  .xl\:bg-blog-image-1 {
+    background-image: url('assets/img/blogImage1.jpg');
+  }
+
+  .xl\:bg-blog-image-2 {
+    background-image: url('assets/img/blogImage2.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -177660,6 +177700,14 @@ video {
 
   .\32xl\:bg-headshot {
     background-image: url('assets/img/tyler.jpg');
+  }
+
+  .\32xl\:bg-blog-image-1 {
+    background-image: url('assets/img/blogImage1.jpg');
+  }
+
+  .\32xl\:bg-blog-image-2 {
+    background-image: url('assets/img/blogImage2.jpg');
   }
 
   .\32xl\:from-transparent {

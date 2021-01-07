@@ -12,10 +12,10 @@ export function Header() {
           </button>
         </Link>
         <nav className="hidden lg:flex">
-          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-3" to="/">Home</Link>
-          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-3" to="/about">About</Link>
-          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-3" to="/">Blog</Link>
-          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-3" to="/">Resources</Link>
+          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-4 text-lg" to="/">Home</Link>
+          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-4 text-lg" to="/about">About</Link>
+          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-4 text-lg" to="/interventions">Services</Link>
+          <Link className="no-underline text-white hover:text-snow hover:text-gray-100 cursor-pointer px-4 text-lg" to="/">Blog</Link>
         </nav>
         <div className="lg:hidden">
           <MenuDropdown />
