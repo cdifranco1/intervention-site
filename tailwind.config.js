@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
       'hero-image': "url('assets/img/mountains.jpg')",
+      'hero-image-2': "url('assets/img/sunset.jpg')",
       'headshot': "url('assets/img/tyler.jpg')",
       'blog-image-1': "url('assets/img/blogImage1.jpg')",
       'blog-image-2': "url('assets/img/blogImage2.jpg')",

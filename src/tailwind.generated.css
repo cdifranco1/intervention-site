@@ -4940,6 +4940,10 @@ video {
   background-image: url('assets/img/mountains.jpg');
 }
 
+.bg-hero-image-2 {
+  background-image: url('assets/img/sunset.jpg');
+}
+
 .bg-headshot {
   background-image: url('assets/img/tyler.jpg');
 }
@@ -39526,6 +39530,10 @@ video {
     background-image: url('assets/img/mountains.jpg');
   }
 
+  .sm\:bg-hero-image-2 {
+    background-image: url('assets/img/sunset.jpg');
+  }
+
   .sm\:bg-headshot {
     background-image: url('assets/img/tyler.jpg');
   }
@@ -74067,6 +74075,10 @@ video {
 
   .md\:bg-hero-image {
     background-image: url('assets/img/mountains.jpg');
+  }
+
+  .md\:bg-hero-image-2 {
+    background-image: url('assets/img/sunset.jpg');
   }
 
   .md\:bg-headshot {
@@ -108612,6 +108624,10 @@ video {
     background-image: url('assets/img/mountains.jpg');
   }
 
+  .lg\:bg-hero-image-2 {
+    background-image: url('assets/img/sunset.jpg');
+  }
+
   .lg\:bg-headshot {
     background-image: url('assets/img/tyler.jpg');
   }
@@ -143155,6 +143171,10 @@ video {
     background-image: url('assets/img/mountains.jpg');
   }
 
+  .xl\:bg-hero-image-2 {
+    background-image: url('assets/img/sunset.jpg');
+  }
+
   .xl\:bg-headshot {
     background-image: url('assets/img/tyler.jpg');
   }
@@ -177696,6 +177716,10 @@ video {
 
   .\32xl\:bg-hero-image {
     background-image: url('assets/img/mountains.jpg');
+  }
+
+  .\32xl\:bg-hero-image-2 {
+    background-image: url('assets/img/sunset.jpg');
   }
 
   .\32xl\:bg-headshot {

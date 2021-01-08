@@ -22,8 +22,8 @@ const BlogCardContainer = () => {
     <>
       <h2 className="text-gray-700 text-3xl font-serif font-thin text-center">Latest Blog Posts</h2>
       <div className="flex flex-col items-center md:flex-row md:justify-around py-4 mt-4 mb-2">
-        {cardDetails.map(el => 
-            <BlogCard cardInfo={el} />
+        {cardDetails.map((el, i) => 
+            <BlogCard cardInfo={el} key={i} />
           )}
       </div>
     </>

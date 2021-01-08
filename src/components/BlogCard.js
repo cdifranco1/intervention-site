@@ -13,7 +13,7 @@ const BlogCard = ({cardInfo}) => {
       <div className="p-3">
         <h1 className="capitalize text-xl font-serif py-2">{header}</h1>
         <p className="py-1 font-serif">{preview}</p>
-        <Link className="py-1" to={linkPath}>Read More</Link>
+        <Link className="py-2 text-blue-700" to={linkPath}>Read More</Link>
       </div>
     </div>
   )

@@ -24,6 +24,12 @@ function App() {
       <Route path="/interventions">
         <Interventions />
       </Route>
+
+      {/* Need to add routing for blog main page here and then have nested routing within the blog page */}
+      {/* <Route path="/blog"></Route>
+      <Route path="/blog">
+        <BlogHome />
+      </Route> */}
       <Footer />
     </div>
   );
