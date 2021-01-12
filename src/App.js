@@ -10,6 +10,10 @@ import BlogCardContainer from "./components/BlogCardContainer"
 function App() {
   return (
     <div className="bg-ghostwhite">
+      {/* test commit */}
+      <div>
+
+      </div>
       <Header />
       <Route exact path="/">
         <CTA />
