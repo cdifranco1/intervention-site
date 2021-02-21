@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
+import { CONTEXT } from "./BlogConfig"
 
 
+const BlogCard = ({cardInfo, orientation}) => {
+  const { image, header, preview } = cardInfo;
 
-const BlogCard = ({cardInfo}) => {
-  const { image, header, preview, blogPath } = cardInfo;
-
-  const linkPath = `/blogs/${blogPath}`
+  const blogPath = header.split(' ').map(el => el.toLowerCase()).join('-');
+  const linkPath = `/blog/${blogPath}`;
 
   return (
-    <div className="w-4/5 my-4 md:w-1/3 rounded-lg border-1 border-gray-500 shadow-lg overflow-hidden">
-      <img src={image} />
-      <div className="p-3">
-        <h1 className="capitalize text-xl font-serif py-2">{header}</h1>
-        <p className="py-1 font-serif">{preview}</p>
-        <Link className="py-2 text-blue-700" to={linkPath}>Read More</Link>
+    <Link to={linkPath} className={`flex ${orientation === "right" ? "flex-row" : "flex-row-reverse"} ? w-full my-4 border-1 shadow-lg overflow-hidden bg-white`}>
+      <img src={image} className="object-cover w-1/3" />
+      <div className="p-7 lg:w-2/3">
+        <h1 className="uppercase text-3xl py-2 tracking-wider text-blueGray-2 font-semibold">{header}</h1>
+        <p className="py-1 uppercase leading-loose text-blueGray-1">{preview}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 

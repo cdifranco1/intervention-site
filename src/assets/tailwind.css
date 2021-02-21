@@ -1,5 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./assets/font/HomepageBaukasten-Book.ttf) format('ttf');
+}
+
 @tailwind utilities;
 
 

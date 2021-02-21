@@ -6,24 +6,19 @@ import { Header } from "./components/Header"
 import { Route } from "react-router-dom"
 import Interventions from "./components/Interventions"
 import BlogCardContainer from "./components/BlogCardContainer"
+import BlogHome from "./components/BlogHome"
+import ServiceLinks from "./components/ServiceLinks"
 
 function App() {
   return (
-    <div className="bg-ghostwhite">
+    <div className="font-sans">
       <Header />
-      {/* Random change */}
-      <div>
-
-      </div>
-      {/* Random change 3 - same change to create conflict*/}
-      <div>
-
-      </div>
       <Route exact path="/">
         <CTA />
         <div className="p-4">
           <Mission />
         </div>
+        <ServiceLinks />
         <BlogCardContainer />
       </Route>
       <Route path="/about">
@@ -33,11 +28,9 @@ function App() {
         <Interventions />
       </Route>
 
-      {/* Need to add routing for blog main page here and then have nested routing within the blog page */}
-      {/* <Route path="/blog"></Route>
       <Route path="/blog">
         <BlogHome />
-      </Route> */}
+      </Route> 
       <Footer />
     </div>
   );

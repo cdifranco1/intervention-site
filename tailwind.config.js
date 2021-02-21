@@ -12,6 +12,9 @@ module.exports = {
       'headshot': "url('assets/img/tyler.jpg')",
       'blog-image-1': "url('assets/img/blogImage1.jpg')",
       'blog-image-2': "url('assets/img/blogImage2.jpg')",
+      'lighthouse': "url('assets/img/LighthouseHeader.jpg')",
+      'lighthouse2': "url('assets/img/lighthouse2.jpg')",
+      'sky': "url('assets/img/sky.jpg')",
      }),
      spacing: {
         '1/2': '50%',
@@ -29,6 +32,9 @@ module.exports = {
         '3/6': '50%',
         '4/6': '66.666667%',
         '5/6': '83.333333%',
+        '1/8': '12.5%',
+        '3/8': '37.5%',
+        '5/8': '62.5%',
         '1/12': '8.333333%',
         '2/12': '16.666667%',
         '3/12': '25%',
@@ -45,7 +51,11 @@ module.exports = {
      backgroundColor: {
        'whitesmoke': "#F5F5F5",
        'ghostwhite': "#F8F8FF",
-       'snow': '#FFFAFA'
+       'snow': '#FFFAFA',
+       'cust-dark-blue': '#1c5f83',
+       'cust-lt-blue': '#5cbddd',
+       'primary-blue': '#444a60',
+       'primary-gray': '#ced9e1'
      }
     },
     screens: {
@@ -68,6 +78,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      blueGray: colors.blueGray
     },
     spacing: {
       px: '1px',
@@ -205,6 +216,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Gotham',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
