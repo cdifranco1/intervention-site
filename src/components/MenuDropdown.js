@@ -7,6 +7,48 @@ import { Link } from 'react-router-dom';
 
 
 
+
+const StyledDropdownButton = ({ children, ariaControls, ariaHaspopup, onClick }) => 
+  <button aria-controls="simple-menu" aria-haspopup="true" onClick={onClick} >{ children }</button>
+
+
+export function ServicesDropdown() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div>
+      <StyledDropdownButton ariaControls="simple-menu" ariaHaspopup="true" onClick={handleClick}>
+        <span>Services</span>
+      </StyledDropdownButton>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <Link to="/services/assessment-and-placement">
+          <MenuItem onClick={handleClose}>Assessment & Placement</MenuItem>
+        </Link>
+        <Link to="/services/sober-coaching">
+          <MenuItem onClick={handleClose}>Sober Coaching</MenuItem>
+        </Link>
+        <Link to="/services/interventions">
+          <MenuItem onClick={handleClose}>Interventions</MenuItem>
+        </Link>
+      </Menu>
+    </div>
+  );
+}
+
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -36,8 +78,8 @@ export default function SimpleMenu() {
         <Link to="/about">
           <MenuItem onClick={handleClose}>About</MenuItem>
         </Link>
-        <Link to="/interventions">
-          <MenuItem onClick={handleClose}>Interventions</MenuItem>
+        <Link to="/services">
+          <MenuItem onClick={handleClose}>Services</MenuItem>
         </Link>
         <Link to="/blog">
           <MenuItem onClick={handleClose}>Blog</MenuItem>

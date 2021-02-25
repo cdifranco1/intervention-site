@@ -4,7 +4,7 @@ import Mission from "./components/Mission"
 import Footer from "./components/Footer"
 import { Header } from "./components/Header"
 import { Route } from "react-router-dom"
-import Interventions from "./components/Interventions"
+import Services from "./components/Services"
 import BlogCardContainer from "./components/BlogCardContainer"
 import BlogHome from "./components/BlogHome"
 import ServiceLinks from "./components/ServiceLinks"
@@ -24,8 +24,8 @@ function App() {
       <Route path="/about">
         <About />
       </Route>
-      <Route path="/interventions">
-        <Interventions />
+      <Route path="/services">
+        <Services />
       </Route>
 
       <Route path="/blog">

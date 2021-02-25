@@ -5,11 +5,11 @@ import ServiceIcon from "./ServiceIcon";
 const SERVICES = [
   {
     name: "Assessment & Placement",
-    path: "/assesment-placement"
+    path: "/assessment-and-placement"
   },
   {
     name: "Intervention",
-    path: "/intervention"
+    path: "/interventions"
   },
   {
     name: "Sober Coaching",
@@ -31,7 +31,7 @@ const ServiceLinks = () => {
   return (
     <div className="flex flex-row justify-evenly py-1/12">
       {SERVICES.map(el => 
-        <ServiceLink path={el.path} name={el.name} />  
+        <ServiceLink path={`/services${el.path}`} name={el.name} />  
         )}
     </div>
   )

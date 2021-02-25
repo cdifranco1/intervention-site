@@ -271,7 +271,11 @@ module.exports = {
       black: '900',
     },
     gap: (theme) => theme('spacing'),
-    gradientColorStops: (theme) => theme('colors'),
+    gradientColorStops: (theme) => ({
+      ...theme('colors'),
+      'primary-blue': '#444a60',
+      'primary-gray': '#ced9e1',
+    }),
     gridAutoColumns: {
       auto: 'auto',
       min: 'min-content',

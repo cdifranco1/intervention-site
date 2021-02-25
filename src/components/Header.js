@@ -1,11 +1,13 @@
-import MenuDropdown from "./MenuDropdown"
+import MenuDropdown from "./MenuDropdown";
 import HomeIcon from '@material-ui/icons/Home';
+// import { ServicesDropdown } from "./MenuDropdown";
+import ServicesDropdown from "./ServiceLinkDropdown";
 import Script from '../assets/Icons/Logos/SmallPNGs/Script.png'
 import { Link, Route } from "react-router-dom";
 
 export function Header() {
   const StyledLink = ({to, children}) => 
-  <Link className="no-underline text-white hover:font-semibold cursor-pointer px-4 text-lg uppercase text-blueGray-1" to={to}>
+  <Link className="no-underline hover:font-semibold cursor-pointer px-4 text-lg uppercase text-blueGray-1" to={to}>
     {children}
   </Link>
 
@@ -18,7 +20,7 @@ export function Header() {
         <nav className="hidden lg:flex">
           <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/interventions">Services</StyledLink>
+          <ServicesDropdown />
           <StyledLink to="/blog">Blog</StyledLink>
         </nav>
         <div className="lg:hidden">
