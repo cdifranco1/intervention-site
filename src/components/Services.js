@@ -86,14 +86,6 @@ const Services = () => {
 
   return (
     <>
-      {/* <h2 className="text-3xl py-1/12 bg-sky text-center font-bold text-white tracking-wide mt-5 bg-cover bg-center w-full relative">Understanding the Importance of Interventions</h2>
-      <div className="p-5">
-        <div>
-          <h1 className="text-3xl font-bold my-3">Services</h1>
-          <div className="p-2">
-            <Link className="text-gray-500 hover:text-gray-700" to="/interventions">Interventions</Link>
-          </div>
-        </div> */}
         <div>
           {SERVICES.map(service => 
             <Route path={`${path}${service.route}`} >

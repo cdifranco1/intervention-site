@@ -4,7 +4,7 @@ const Paragraphs = ({paragraphs}) => paragraphs.map(p => <StyledParagraph>{p}</S
 
 const StyledParagraph = ({children}) => <p className="leading-loose text-blueGray-1 my-7">{children}</p>
 
-const AltStyledParagraph = ({placementType, children}) =>
+export const AltStyledParagraph = ({placementType, children}) =>
   <div className="my-5">
     <h1 className="text-2xl uppercase text-blueGray-1">{placementType}</h1>
     <div className="flex flex-row py-5">

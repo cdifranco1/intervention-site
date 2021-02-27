@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
+import ServiceLinkDropdown from "./ServiceLinkDropdown"
 import { Link } from 'react-router-dom';
 
 
@@ -78,9 +79,7 @@ export default function SimpleMenu() {
         <Link to="/about">
           <MenuItem onClick={handleClose}>About</MenuItem>
         </Link>
-        <Link to="/services">
-          <MenuItem onClick={handleClose}>Services</MenuItem>
-        </Link>
+        <ServiceLinkDropdown />
         <Link to="/blog">
           <MenuItem onClick={handleClose}>Blog</MenuItem>
         </Link>

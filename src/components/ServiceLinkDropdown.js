@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
@@ -13,8 +13,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   paper: {
-    marginRight: theme.spacing(2),
+    marginTop: '0.5rem',
   },
+  menuItem: {
+    color: 'rgba(104, 128, 143, 1)',
+    textTransform: "uppercase"
+  }
 }));
 
 const StyledButton = ({children, rest}) => {
@@ -80,12 +84,12 @@ export default function MenuListComposition() {
               {...TransitionProps}
               style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
             >
-              <Paper>
+              <Paper className={classes.paper}>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/assessment-and-placement">Assessment & Placement</Link></MenuItem>
+                    <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/sober-coaching">Sober Coaching</Link></MenuItem>
+                    <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/interventions">Interventions</Link></MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
