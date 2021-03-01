@@ -8,6 +8,7 @@ import Services from "./components/Services"
 import BlogCardContainer from "./components/BlogCardContainer"
 import BlogHome from "./components/BlogHome"
 import ServiceLinks from "./components/ServiceLinks"
+import Resources from "./components/Resources"
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
 
       <Route path="/blog">
         <BlogHome />
+      </Route> 
+      
+      <Route path="/resources">
+        <Resources />
       </Route> 
       <Footer />
     </div>

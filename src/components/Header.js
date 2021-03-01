@@ -1,15 +1,16 @@
 import MenuDropdown from "./MenuDropdown";
 import HomeIcon from '@material-ui/icons/Home';
 // import { ServicesDropdown } from "./MenuDropdown";
-import ServicesDropdown from "./ServiceLinkDropdown";
+import ServicesDropdown from "./DropdownV2";
 import Script from '../assets/Icons/Logos/SmallPNGs/Script.png'
 import { Link, Route } from "react-router-dom";
 
-export function Header() {
-  const StyledLink = ({to, children}) => 
+export const StyledLink = ({to, children}) => 
   <Link className="no-underline hover:font-semibold cursor-pointer px-4 text-lg uppercase text-blueGray-1" to={to}>
     {children}
   </Link>
+
+export function Header() {
 
   return (
     <div className="py-4 px-5">
@@ -22,6 +23,7 @@ export function Header() {
           <StyledLink to="/about">About</StyledLink>
           <ServicesDropdown />
           <StyledLink to="/blog">Blog</StyledLink>
+          <StyledLink to="/resources">Resources</StyledLink>
         </nav>
         <div className="lg:hidden">
           <MenuDropdown />

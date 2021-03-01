@@ -75,27 +75,39 @@ const RESOURCES = [
   },
 ]
 
-const StyledResource = () => {
+const StyledResource = ({resourceName, linkRef, description}) => {
   return (
-    <div>
-      <a href={linkRef}>{resourceName}</a>
-      <AltStyledParagraph>{description}</AltStyledParagraph>
+    <div className="mt-5">
+      <a className="text-2xl uppercase text-blueGray-1 no-underline hover:cursor-pointer" href={linkRef}>{resourceName}</a>
+      <div className="flex flex-row py-5">
+        <div className="bg-gradient-to-r from-transparent to-blueGray-200 mr-3 rounded-sm shadow-sm" style={{width: "3%"}}></div>
+        <p className="w-10/12 leading-relaxed text-blueGray-1">{description}</p>
+      </div>
     </div>
   )
 
 }
 
 
-const Resources = () => {
+export default () => {
   return (
-    <div className="text-xl py-5 text-center font-bold bg-gradient-to-r from-primary-blue via-primary-blue text-white tracking-wide mt-5 bg-cover bg-center w-full relative">
-      <h1>Family Resources</h1>
-
-      {/* Import underline */}
-      <div></div>
-
-      <p></p>
-
+    <div>
+      <div className="bg-gradient-to-r from-primary-blue to-blueGray-1 text-white tracking-wide mt-5 w-full relative py-20 flex flex-col items-center text-center" style={{zIndex: -1}}>
+        <h1 className="uppercase text-4xl py-5">Family Resources</h1>
+        <div className="bg-gray-200" style={{height: "2px", width: "300px"}}></div>
+        <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved one’s need. Below is a comprehensive list of resources for those effected by addiction and mental health.  For any additional information about resources available, please contact us by phone or email.</p>
+      </div>
+      <div className="py-10 px-24">
+        {RESOURCES.map(el => {
+          return (
+            <StyledResource 
+              resourceName={el.resourceName} 
+              linkRef={el.href} 
+              description={el.description} 
+            />
+          )
+        })}
+      </div>
     </div>
   )
 }

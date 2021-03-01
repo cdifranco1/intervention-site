@@ -15,9 +15,13 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: '0.5rem',
   },
+  menuList: {
+    zIndex: 1000,
+  },
   menuItem: {
     color: 'rgba(104, 128, 143, 1)',
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    zIndex: 1000
   }
 }));
 
@@ -61,13 +65,6 @@ export default function MenuListComposition() {
 
   return (
     <div className={classes.root}>
-      {/* <Paper className={classes.paper}>
-        <MenuList>
-          <MenuItem>Profile</MenuItem>
-          <MenuItem>My account</MenuItem>
-          <MenuItem>Logout</MenuItem>
-        </MenuList>
-      </Paper> */}
       <div>
         <span
           className="hover:font-semibold cursor-pointer px-4 text-lg uppercase text-blueGray-1"
@@ -86,7 +83,7 @@ export default function MenuListComposition() {
             >
               <Paper className={classes.paper}>
                 <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                  <MenuList className="z-50" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/assessment-and-placement">Assessment & Placement</Link></MenuItem>
                     <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/sober-coaching">Sober Coaching</Link></MenuItem>
                     <MenuItem className={classes.menuItem} onClick={handleClose}><Link to="/services/interventions">Interventions</Link></MenuItem>
