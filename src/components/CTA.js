@@ -2,7 +2,7 @@
 
 const CTA = () => {
   return (
-    <div className="py-2 p-5 bg-lighthouse bg-cover w-full relative flex justify-center items-center md:justify-start md:items-start" style={{height: "500px"}}>
+    <div className="p-5 bg-lighthouse bg-cover bg-center w-full relative flex justify-center items-center md:justify-start md:items-start">
       <div className="p-3 w-full mt-7 flex flex-col items-center md:items-start max-h-full">
         <div className="p-2">
           <h1 className="text-3xl font-bold text-white my-3 tracking-wide uppercase">Intervention and Addiction Specialist</h1>

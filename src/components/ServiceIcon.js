@@ -2,8 +2,18 @@
 // 100: '#f1f5f9',
 // 200: '#e2e8f0',
 
-const ServiceIcon = () => 
-  <svg xmlns="http://www.w3.org/2000/svg" className="rounded-full shadow-lg" viewBox="0 0 1174.72 1174.72">
+const ServiceIcon = ({shadowType}) => 
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    className={`
+      rounded-full 
+      ${shadowType === "lg" ? 
+        "shadow-lg" : 
+        shadowType === "md" ? 
+        "shadow-md" : 
+        shadowType === "sm" ? 
+        "shadow-sm" : 
+        null}`
+        } viewBox="0 0 1174.72 1174.72">
     <defs>
       <style>{`.cls-1,.cls-2{fill:#e2e8f0;}.cls-2{opacity:0.41;}`}</style>
     </defs>

@@ -1,7 +1,7 @@
 import CTA from "./components/CTA"
 import About from "./components/About"
 import Mission from "./components/Mission"
-import Footer from "./components/Footer"
+import ContactSection from "./components/ContactSection"
 import { Header } from "./components/Header"
 import { Route } from "react-router-dom"
 import Services from "./components/Services"
@@ -9,6 +9,7 @@ import BlogCardContainer from "./components/BlogCardContainer"
 import BlogHome from "./components/BlogHome"
 import ServiceLinks from "./components/ServiceLinks"
 import Resources from "./components/Resources"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <Route path="/resources">
         <Resources />
       </Route> 
+      <ContactSection />
       <Footer />
     </div>
   );

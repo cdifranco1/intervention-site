@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import LightHouseIcon from "../assets/Icons/Logos/SmallPNGs/LighthouseLightBlue.png";
 import ServiceIcon from "./ServiceIcon";
+import { useRef } from "react";
+
 
 const SERVICES = [
   {
@@ -18,10 +19,12 @@ const SERVICES = [
 ]
 
 const ServiceLink = (props) => {
+  const LinkHeight = useRef()
+
   return (
-    <Link className="w-1/4 relative rounded-full bg-blueGray-300 hover:bg-blueGray-400" to={props.path}>
+    <Link className="w-3/5 md:w-1/4 relative rounded-full bg-blueGray-300 hover:bg-blueGray-400 mb-5" to={props.path}>
       <ServiceIcon />
-      <h2 className="text-white absolute w-full text-center text-xl font-bold uppercase" style={{top: "47%"}}>{props.name}</h2>
+      <h2 className="text-white absolute w-full text-center text-xl font-bold uppercase px-2" style={{top: "43%"}}>{props.name}</h2>
     </Link>
   )
 }
@@ -29,7 +32,7 @@ const ServiceLink = (props) => {
 
 const ServiceLinks = () => {
   return (
-    <div className="flex flex-row justify-evenly py-1/12">
+    <div className="flex flex-col items-center md:flex-row justify-evenly mb-7 md:py-1/12">
       {SERVICES.map(el => 
         <ServiceLink path={`/services${el.path}`} name={el.name} />  
         )}

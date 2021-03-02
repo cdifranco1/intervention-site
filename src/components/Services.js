@@ -55,7 +55,6 @@ const SERVICES = [
   {
     serviceName: "Sober Coaching",
     subDescription: "At Lighthouse Recovery Services, our sober coaching program is designed to provide individuals with the resources and support they need to build a healthy ligestyle in recovery. Recovery is build around connection and accountability; our program offers individuals an opportunity to flourish in their own personal recovery.",
-    subheader: "What are the different levels of care?",
     route: "/sober-coaching",
     paragraphs: [
       {

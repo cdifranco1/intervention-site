@@ -9,7 +9,7 @@ export const AltStyledParagraph = ({placementType, children}) =>
     <h1 className="text-2xl uppercase text-blueGray-1">{placementType}</h1>
     <div className="flex flex-row py-5">
       <div className="bg-gradient-to-r from-transparent to-blueGray-200 mr-3 rounded-sm shadow-sm" style={{width: "3%"}}></div>
-      <p className="w-10/12 leading-relaxed text-blueGray-1">{children}</p>
+      <p className="leading-relaxed text-blueGray-1">{children}</p>
     </div>
   </div>
 
@@ -46,13 +46,13 @@ export const Service = ({serviceName, subheader, subDescription, paragraphs, img
       
       <h1 className="py-3 text-3xl uppercase text-center text-blue-1">{serviceName}</h1>
 
-      <div className="bg-gray-200 w-1/5 mx-auto" style={{height: "2px"}}></div>
+      <div className="bg-gray-200 w-2/5 md:w-1/5 mx-auto" style={{height: "2px"}}></div>
 
-      <p className="leading-loose text-blueGray-1 text-center px-1/6 py-5 text-lg tracking-wide">{subDescription}</p>
+      <p className="leading-loose text-blueGray-1 text-center px-6 md:px-1/6 py-5 text-lg tracking-wide">{subDescription}</p>
       
-      <h2 className="text-xl py-5 text-center font-bold bg-gradient-to-r from-primary-blue via-primary-blue text-white tracking-wide mt-5 bg-cover bg-center w-full relative">{subheader}</h2>
+      {subheader && <h2 className="text-xl py-5 text-center font-bold bg-gradient-to-r from-primary-blue via-primary-blue text-white tracking-wide mt-5 bg-cover bg-center w-full relative">{subheader}</h2>}
 
-      <div className="py-10 px-24">
+      <div className="py-10 px-6 md:px-24">
         {path === "/services/interventions" ? 
           <Paragraphs paragraphs={paragraphs} /> :
           <AltParagraphs paragraphs={paragraphs} />
