@@ -36,12 +36,26 @@ const SoberCoachClose = () => {
   )
 }
 
-export const Service = ({serviceName, subheader, subDescription, paragraphs, imgSrc}) => {
+export const Service = ({serviceName, subheader, subDescription, paragraphs, imgSrc, tag}) => {
   const { path } = useRouteMatch();
 
   return (
     <div className="">
-      <img src={imgSrc} alt={serviceName} className="mb-5" />
+
+      <div
+        className={`
+          ${
+            tag === "intervention" ?
+            "bg-interventions" :
+            tag === "sober" ?
+            "bg-coaching" :
+            "bg-assessment"
+          }
+          bg-cover relative mb-5 bg-center
+        `} style={{ height: "500px"}}
+      >
+      </div>
+      {/* <img src={imgSrc} alt={serviceName} className="mb-5" /> */}
       
       <h1 className="py-3 text-3xl uppercase text-center text-blue-1">{serviceName}</h1>
 

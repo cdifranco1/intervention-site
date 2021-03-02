@@ -21,7 +21,7 @@ const ServiceLink = (props) => {
   return (
     <Link className="w-3/5 md:w-1/4 relative rounded-full bg-blueGray-300 hover:bg-blueGray-400 mb-5" to={props.path}>
       <ServiceIcon />
-      <h2 className="text-white absolute w-full text-center text-xl font-bold uppercase px-2" style={{top: "43%"}}>{props.name}</h2>
+      <h2 className="text-blue-1 absolute w-full text-center text-xl font-bold uppercase px-2" style={{top: "43%"}}>{props.name}</h2>
     </Link>
   )
 }

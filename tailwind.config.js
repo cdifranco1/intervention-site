@@ -15,6 +15,10 @@ module.exports = {
       'lighthouse': "url('assets/img/LighthouseHeader.jpg')",
       'lighthouse2': "url('assets/img/lighthouse2.jpg')",
       'sky': "url('assets/img/sky.jpg')",
+      'interventions': "url('assets/img/HeaderInterventionImage.png')",
+      'assessment': "url('assets/img/HeaderAssessmentPlacementImage.png')",
+      'resources': "url('assets/img/HeaderFamilyResourcesImage.png')",
+      'coaching': "url('assets/img/HeaderSoberCoachingImage.png')",
      }),
      spacing: {
         '1/2': '50%',
@@ -116,6 +120,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      100: '500px',
     },
     animation: {
       none: 'none',

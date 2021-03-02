@@ -10,6 +10,7 @@ const SERVICES = [
   {
     serviceName: "Interventions",
     subheader: "Understanding the importance of Interventions",
+    tag: "intervention",
     paragraphs: [
       "Addiction is a treatable, chronic and deadly disease, as defined by the American Medical Association.  It is unlike any other disease, the person suffering from the disease doesn’t realize their condition is a problem.  Modern medicine doesn’t have a “cure” to addiction, which makes the process more complicated.  There are a variety of self-help groups and medically assisted treatments (MAT) available for addiction but the prerequisite to treatment is the addicted individual admitting they have a problem.  Typically, the addict or alcoholic is the last person to realize they are in active addiction.",
       "As the external problems start to pile up for the addicted indiviudal – issues with relationships, the law and/or work, it becomes more apparent to loved ones that something needs to change.  Most families dealing with substance abuse have exhausted their personal resources.  In some cases, they’ve even utilized a variety of professional resources.  Unfortunately, if the addicted individual isn’t ready to make a change, there is little that can be done, regardless of the level of care they’ve received.  At Fresh Start Recovery Services, it is our goal to help your loved one realize that it’s time to get help for themselves.",
@@ -21,6 +22,7 @@ const SERVICES = [
   {
     serviceName: "Assessment and Placement",
     subDescription: "Whether you have a loved one suffering from an addiction or mental health disorder, it can be difficult to navigate the large network of treatment providers. There are a variety of different categories of treatment care that vary in intensity. It is crucial to match your loved one with the appropriate level of care needed. If your loved one is in a level of care that's too intense based on where they're at, it could hinder their recover process. If your loved one isn't at a high enough level of care, their safety can be at risk. At Lighthouse Recovery Services, we utilize an assessment process that will help us create an individualized treatment plan, make recommendations, and secure treatment care.",
+    tag: "assessment",
     subheader: "What are the different levels of care?",
     route: "/assessment-and-placement",
     paragraphs: [
@@ -55,6 +57,7 @@ const SERVICES = [
     serviceName: "Sober Coaching",
     subDescription: "At Lighthouse Recovery Services, our sober coaching program is designed to provide individuals with the resources and support they need to build a healthy ligestyle in recovery. Recovery is build around connection and accountability; our program offers individuals an opportunity to flourish in their own personal recovery.",
     route: "/sober-coaching",
+    tag: "sober",
     paragraphs: [
       {
         header: "Who can benefit from sober coaching?",
@@ -87,7 +90,8 @@ const Services = () => {
         <div>
           {SERVICES.map((service, i) => 
             <Route key={`${service.serviceName} + ${i}`} path={`${path}${service.route}`} >
-              <Service 
+              <Service
+                tag={service.tag} 
                 imgSrc={service.imgSrc}
                 serviceName={service.serviceName} 
                 subDescription={service.subDescription}
