@@ -51,12 +51,11 @@ export const Service = ({serviceName, subheader, subDescription, paragraphs, img
             "bg-coaching" :
             "bg-assessment"
           }
-          bg-cover relative mb-5 bg-center
-        `} style={{ height: "500px"}}
+          bg-cover relative mb-5 bg-center h-100
+        `}
       >
       </div>
-      {/* <img src={imgSrc} alt={serviceName} className="mb-5" /> */}
-      
+
       <h1 className="py-3 text-3xl uppercase text-center text-blue-1">{serviceName}</h1>
 
       <div className="bg-gray-200 w-2/5 md:w-1/5 mx-auto" style={{height: "2px"}}></div>
