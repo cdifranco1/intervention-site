@@ -16,7 +16,7 @@ const ContactSection = () => {
               <div className="rounded-full bg-white p-2">
                 <EmailIcon fontSize="large" style={{ color: "#444a60" }} />
               </div>
-              <a className="no-underline uppercase px-2 ml-2" href="mailto:tylerfahey3@gmail.com?subject=Intervention Information Request">tylerfahey3@gmail.com</a>        
+              <a className="no-underline uppercase px-2 ml-2" href="mailto:tylerfahey3@gmail.com?subject=Intervention Information Request">Lighthouserecoveryllc@gmail.com</a>        
             </div>
             <div className="flex items-center my-3">
               <div className="rounded-full bg-white p-2">

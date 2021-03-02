@@ -12,6 +12,7 @@ module.exports = {
       'headshot': "url('assets/img/tyler.jpg')",
       'blog-image-1': "url('assets/img/blogImage1.jpg')",
       'blog-image-2': "url('assets/img/blogImage2.jpg')",
+      'blog-image-3': "url('assets/img/blogImage3.jpg')",
       'lighthouse': "url('assets/img/LighthouseHeader.jpg')",
       'lighthouse2': "url('assets/img/lighthouse2.jpg')",
       'sky': "url('assets/img/sky.jpg')",
