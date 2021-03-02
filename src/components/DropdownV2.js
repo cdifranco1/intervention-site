@@ -1,7 +1,5 @@
-import { Translate } from "@material-ui/icons";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { StyledLink } from "./Header";
 
 const ServiceLink = ({onClick, path, children}) => {
   return (
@@ -40,16 +38,14 @@ const ServicesDropdown = () => {
 export const Popper = (props) => {
 
   const handleClick = (e) => {
-  console.log("RUNNING HANDLE CLICK");
-    if (props.context == "mobile"){
+    if (props.context === "mobile"){
       props.handleClose(e);
     }
   }
 
   const getPos = (el) => {
     const position = el.current.getBoundingClientRect()
-    console.log(position)
-    if (props.context == "mobile"){
+    if (props.context === "mobile"){
       return ({
         top: `${position.top + 80}px`,
         left: `${position.left - 255}px`

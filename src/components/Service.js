@@ -1,6 +1,6 @@
 import { useRouteMatch } from "react-router-dom";
 
-const Paragraphs = ({paragraphs}) => paragraphs.map(p => <StyledParagraph>{p}</StyledParagraph>)
+const Paragraphs = ({paragraphs}) => paragraphs.map((p, i) => <StyledParagraph key={i}>{p}</StyledParagraph>)
 
 const StyledParagraph = ({children}) => <p className="leading-loose text-blueGray-1 my-7">{children}</p>
 
@@ -18,7 +18,7 @@ const AltParagraphs = ({paragraphs}) => paragraphs.map(p => {
     <AltStyledParagraph placementType={p.header}>
       {Array.isArray(p.paragraph) ?
         <ul>
-          {p.paragraph.map(bullet => <li className="mb-3">{bullet}</li>)}
+          {p.paragraph.map((bullet, i) => <li key={i} className="mb-3">{bullet}</li>)}
         </ul> :
         p.paragraph
       }
@@ -41,8 +41,7 @@ export const Service = ({serviceName, subheader, subDescription, paragraphs, img
 
   return (
     <div className="">
-      {/* header img */}
-      <img src={imgSrc} className="mb-5" />
+      <img src={imgSrc} alt={serviceName} className="mb-5" />
       
       <h1 className="py-3 text-3xl uppercase text-center text-blue-1">{serviceName}</h1>
 

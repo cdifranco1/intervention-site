@@ -1,8 +1,7 @@
-import { Link, Route, useRouteMatch } from 'react-router-dom';
+import { Route, useRouteMatch } from 'react-router-dom';
 import { Service } from "./Service";
 
 import HeaderInterventionImage from "../assets/img/HeaderInterventionImage.png"
-import HeaderFamilyResourcesImage from "../assets/img/HeaderFamilyResourcesImage.png"
 import HeaderSoberCoachingImage from "../assets/img/HeaderSoberCoachingImage.png"
 import HeaderAssessmentPlacementImage from "../assets/img/HeaderAssessmentPlacementImage.png"
 
@@ -86,8 +85,8 @@ const Services = () => {
   return (
     <>
         <div>
-          {SERVICES.map(service => 
-            <Route path={`${path}${service.route}`} >
+          {SERVICES.map((service, i) => 
+            <Route key={`${service.serviceName} + ${i}`} path={`${path}${service.route}`} >
               <Service 
                 imgSrc={service.imgSrc}
                 serviceName={service.serviceName} 

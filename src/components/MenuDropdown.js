@@ -3,8 +3,6 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
-// import ServiceLinkDropdown from "./ServiceLinkDropdown"
-import ServiceLinkDropdown from "./DropdownV2";
 import { Link } from 'react-router-dom';
 import { Popper } from "./DropdownV2";
 import { makeStyles } from '@material-ui/core';
@@ -34,7 +32,6 @@ export default function SimpleMenu() {
   };
 
   const handleClose = () => {
-    console.log("RUNNING HANDLE CLOSE");
     setAnchorEl(null);
   };
 
