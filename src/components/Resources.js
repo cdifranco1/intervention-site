@@ -78,10 +78,10 @@ const RESOURCES = [
 const StyledResource = ({resourceName, linkRef, description}) => {
   return (
     <div className="mt-5">
-      <a className="text-2xl uppercase text-blueGray-1 no-underline hover:cursor-pointer" href={linkRef}>{resourceName}</a>
+      <a className="text-xl uppercase text-blueGray-1 no-underline hover:cursor-pointer" href={linkRef}>{resourceName}</a>
       <div className="flex flex-row py-5">
-        <div className="bg-gradient-to-r from-transparent to-blueGray-200 mr-3 rounded-sm shadow-sm" style={{width: "3%"}}></div>
-        <p className="leading-relaxed text-blueGray-1">{description}</p>
+        <div className="bg-gradient-to-r from-transparent to-blueGray-200 mr-3 rounded-sm shadow-sm" style={{ width: "25px" }}></div>
+        <p className="leading-relaxed text-blueGray-1 w-10/12">{description}</p>
       </div>
     </div>
   )
@@ -92,7 +92,7 @@ const StyledResource = ({resourceName, linkRef, description}) => {
 export default () => {
   return (
     <div>
-      <div className="bg-gradient-to-r from-primary-blue to-blueGray-1 text-white tracking-wide mt-5 w-full relative py-20 flex flex-col items-center text-center" style={{zIndex: -1}}>
+      <div className="bg-gradient-to-r from-primary-blue to-blueGray-1 text-white tracking-wide mt-5 w-full relative py-20 flex flex-col items-center text-center">
         <h1 className="uppercase text-4xl py-5">Family Resources</h1>
         <div className="bg-gray-200" style={{height: "2px", width: "300px"}}></div>
         <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved one’s need. Below is a comprehensive list of resources for those effected by addiction and mental health.  For any additional information about resources available, please contact us by phone or email.</p>

@@ -18,6 +18,7 @@ const Contact = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    console.log(state);
     emailjs.send("service_195kjs9", "contact_form", state, "user_QmOpOMxPzbv3nPEhopp5T");
   }
 

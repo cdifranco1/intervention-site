@@ -12,7 +12,7 @@ const BlogCard = ({cardInfo, orientation}) => {
     <Link to={linkPath} >
       <div className={`flex flex-col ${orientation === "right" ? "md:flex-row" : "md:flex-row-reverse"} ? w-full my-4 border-1 shadow-lg bg-white hover:shadow-xl`}>
         <div className={`
-          bg-cover bg-center relative w-1/3
+          bg-cover bg-center relative w-full py-24 md:w-1/3
           ${
             image === 1 ?
             "bg-blog-image-1" :
@@ -22,7 +22,7 @@ const BlogCard = ({cardInfo, orientation}) => {
           }
         ` }> 
         </div>
-        <div className="p-7 w-2/3">
+        <div className="p-7 md:w-2/3">
           <h1 className="uppercase text-3xl py-2 tracking-wider text-blueGray-2 font-semibold">{header}</h1>
           <p className="py-1 uppercase leading-loose text-blueGray-1">{preview}</p>
         </div>

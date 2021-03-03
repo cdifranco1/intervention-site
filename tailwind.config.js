@@ -9,7 +9,7 @@ module.exports = {
       backgroundImage: theme => ({
       'hero-image': "url('assets/img/mountains.jpg')",
       'hero-image-2': "url('assets/img/sunset.jpg')",
-      'headshot': "url('assets/img/tyler.jpg')",
+      'headshot': "url('assets/img/headshot.jpg')",
       'blog-image-1': "url('assets/img/blogImage1.jpg')",
       'blog-image-2': "url('assets/img/blogImage2.jpg')",
       'blog-image-3': "url('assets/img/blogImage3.jpg')",
@@ -79,11 +79,18 @@ module.exports = {
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
-      blue: colors.blue,
+      blue: {
+        1: '#444a60',
+        ...colors.blue,
+      },
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      blueGray: colors.blueGray
+      blueGray: {
+        1: '#68808f',
+        2: '#ced9e1',
+        ...colors.blueGray
+      }
     },
     spacing: {
       px: '1px',

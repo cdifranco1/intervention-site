@@ -7,9 +7,9 @@ const StyledParagraph = ({children}) => <p className="leading-loose text-blueGra
 export const AltStyledParagraph = ({placementType, children}) =>
   <div className="my-5">
     <h1 className="text-2xl uppercase text-blueGray-1">{placementType}</h1>
-    <div className="flex flex-row py-5">
-      <div className="bg-gradient-to-r from-transparent to-blueGray-200 mr-3 rounded-sm shadow-sm" style={{width: "3%"}}></div>
-      <p className="leading-relaxed text-blueGray-1">{children}</p>
+    <div className="flex flex-row py-5 w-full">
+      <div className="bg-gradient-to-r from-transparent to-blueGray-100 rounded-sm shadow-sm mr-5" style={{width: "2%"}}></div>
+      <p className="leading-relaxed text-blueGray-1 w-10/12">{children}</p>
     </div>
   </div>
 
@@ -31,7 +31,7 @@ const SoberCoachClose = () => {
 
   return (
     <div className="bg-blueGray-100 text-blueGray-1">
-      <p className="text-center px-1/12 py-8 my-5 text-lg tracking-wider"><BoldSpan>Think of a topic </BoldSpan>coming into each meeting. Picture yourself <BoldSpan>completing it. </BoldSpan>How does it <BoldSpan>feel? </BoldSpan>Who is going to hold you accountable?</p>
+      <p className="text-center px-1/12 py-8 mb-10 text-lg tracking-wider"><BoldSpan>Think of a topic </BoldSpan>coming into each meeting. Picture yourself <BoldSpan>completing it. </BoldSpan>How does it <BoldSpan>feel? </BoldSpan>Who is going to hold you accountable?</p>
     </div>
   )
 }

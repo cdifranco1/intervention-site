@@ -33,7 +33,7 @@ const ServiceLink = (props) => {
   }
 
   return (
-    <Link className="w-3/5 md:w-1/4 relative rounded-full bg-blueGray-200 mb-5" to={props.path}>
+    <Link className="w-3/5 md:w-1/5 relative rounded-full bg-blueGray-200 mb-5" to={props.path}>
       <div ref={containerRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="rounded-full">
         <ServiceIcon shadowType="md" />
         <h2 ref={h2Ref} className="text-blueGray-1 absolute w-full text-center text-xl font-semibold uppercase px-2" style={{top: "44%"}}>{props.name}</h2>
@@ -45,7 +45,7 @@ const ServiceLink = (props) => {
 
 const ServiceLinks = () => {
   return (
-    <div className="flex flex-col items-center md:flex-row justify-evenly mb-7 md:py-1/12">
+    <div className="flex flex-col items-center md:flex-row justify-evenly mb-12 mt-7">
       {SERVICES.map((el, i) => 
         <ServiceLink key={`${el}+${i}`} path={`/services${el.path}`} name={el.name} />  
         )}
