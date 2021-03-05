@@ -1,4 +1,3 @@
-import blogImage2 from "../../assets/img/blogImage2.jpg";
 import { StdParagraph, BlogHeader } from "./utils";
 
 

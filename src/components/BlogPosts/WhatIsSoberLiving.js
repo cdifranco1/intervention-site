@@ -1,4 +1,3 @@
-import blogImage2 from "../../assets/img/blogImage1.jpg";
 import { StdParagraph, BlogHeader, BlogList, ListItem, StyledList } from "./utils";
 
 const WhatIsSoberLiving = () =>

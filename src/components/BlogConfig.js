@@ -1,7 +1,3 @@
-import blogImage1 from "../assets/img/blogImage1.jpg";
-import blogImage2 from "../assets/img/blogImage2.jpg";
-import blogImage3 from "../assets/img/blogImage3.jpg";
-
 export const CONTEXT = {
   HOME_PAGE: "HOME_PAGE",
   BLOG_PAGE: "BLOG_PAGE"
@@ -16,7 +12,7 @@ export const BLOG_ROUTES = {
 export const CARD_DETAILS = [
   {
     header: "What is Sober Living?",
-    preview: "Drug and alcohol addiction are extremely difficult to overcome, partly because of the accessibility to these substances. Alcohol can be purchased at grocery stores, restaurants, and gas stations. Thelegalization of marijuana has made the drug much easier to procure...",
+    preview: "Drug and alcohol addiction are extremely difficult to overcome, partly because of the accessibility to these substances. Alcohol can be purchased at grocery stores, restaurants, and gas stations. The legalization of marijuana has made the drug much easier to procure...",
     image: 1,
     route: BLOG_ROUTES.WHAT_IS_SOBER_LIVING
   },

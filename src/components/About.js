@@ -15,7 +15,7 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-8/12 leading-loose ml-20">
-          <h2 className="text-gray-700 tracking-wider text-4xl mb-7 text-center md:text-left uppercase">About Tyler and His Intervention Methodology.</h2>
+          <h2 className="text-gray-700 tracking-wider text-4xl mb-7 text-center md:text-left uppercase">About Tyler and His Intervention Methodology</h2>
           <p className="mb-5 text-blueGray-1">Tyler comes from a family where addiction is prevalent.  His personal experiences in an alcoholic home help him relate to family members of the alcoholic or addict.  He understands what this disease can do to a family system and how much work goes into healing everyone involved.  Through these experiences, he recognizes that addiction cases are time-sensitive and stressful. </p>  
           
           <p className="mb-5 text-blueGray-1">Tyler can also relate to your loved one in active addiction.  His personal story is an indication that recovery is possible for anyone.  He doesn’t necessarily believe in the old saying about addicts or alcoholics needing to hit rock bottom before they can get help.  He believes that his ‘bottom’ was raised when he was intervened on.  It’s this belief that inspires him to help families raise their loved one’s ‘bottom’ through the intervention process. </p>

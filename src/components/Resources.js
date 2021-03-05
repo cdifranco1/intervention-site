@@ -6,7 +6,7 @@ const RESOURCES = [
   {
     resourceName: 'Alcoholics Anonymous (AA)',
     href: 'https://www.aa.org/',
-    description: 'AA Anonymous is a Fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others recover from alcoholism.'
+    description: 'Alcoholics Anonymous is a Fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others recover from alcoholism.'
   },
   {
     resourceName: 'Al-Anon',
@@ -24,9 +24,9 @@ const RESOURCES = [
     description: 'Cocaine Anonymous is a Fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others recover from their addiction.'
   },
   {
-    resourceName: 'Gambling Anonymous',
+    resourceName: 'Gamblers Anonymous',
     href: 'http://www.gamblersanonymous.org/ga/',
-    description: 'Gam-Anon is a 12 Step self-help fellowship of men and women who have been affected by the gambling problem of another.'
+    description: 'Gamblers Anonymous is a fellowship of men and women who share their experience, strength and hope with each other that they may solve their common problem and help others to recover from a gambling problem.'
   },
   {
     resourceName: 'Narcotics Anonymous (NA)',
@@ -95,7 +95,7 @@ export default () => {
       <div className="bg-gradient-to-r from-primary-blue to-blueGray-1 text-white tracking-wide mt-5 w-full relative py-20 flex flex-col items-center text-center">
         <h1 className="uppercase text-4xl py-5">Family Resources</h1>
         <div className="bg-gray-200" style={{height: "2px", width: "300px"}}></div>
-        <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved one’s need. Below is a comprehensive list of resources for those effected by addiction and mental health.  For any additional information about resources available, please contact us by phone or email.</p>
+        <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved one’s need. Below is a comprehensive list of links to resources available for those affected by addiction and mental health. For any additional information about resources available, please contact us by phone or email.</p>
       </div>
       <div className="py-10 px-6 md:px-24">
         {RESOURCES.map(el => {

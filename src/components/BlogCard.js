@@ -15,9 +15,9 @@ const BlogCard = ({cardInfo, orientation}) => {
           bg-cover bg-center relative w-full py-24 md:w-1/3
           ${
             image === 1 ?
-            "bg-blog-image-1" :
+            "bg-sober-living-blog" :
             image === 2 ?
-            "bg-blog-image-2" :
+            "bg-intervention-blog" :
             "bg-blog-image-3"
           }
         ` }> 
