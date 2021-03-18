@@ -34,7 +34,7 @@ const WhatIsSoberLiving = () =>
     </BlogList>
 
     <StdParagraph>
-      A sober living environment is a great place for someone that is coming out of a residential treatment center.  Treatment centers should be vetting the sober livings that they recommend their patients go to after their residential treatment.  Sober living provides individuals with an opportunity to get back on their feet while being held accountable.  Sober living is also an option for people that are struggling in the ‘real world’, but don’t have the time or resources to go to residential treatment.  It provides people with a sense of community and fellowship which is an integral part of recovery.  Living fees are typically paid weekly, biweekly or monthly, as previously noted, relapse can be grounds for eviction.  A live-in sober manager typically administers drug and alcohol screening.
+      A sober living environment is a great place for someone that is coming out of a residential treatment center.  Treatment centers should be vetting the sober livings that they recommend their patients go to after their residential treatment.  Sober living provides individuals with an opportunity to get back on their feet while being held accountable.  Sober living is also an option for people that are struggling in the ‘real world’, but don’t have the time or resources to go to residential treatment.  It provides people with a sense of community and fellowship which is an integral part of recovery.  Living fees are typically paid weekly, biweekly or monthly. As previously noted, relapse can be grounds for eviction.  A live-in sober manager typically administers drug and alcohol screening.
     </StdParagraph>
 
     <StdParagraph>
