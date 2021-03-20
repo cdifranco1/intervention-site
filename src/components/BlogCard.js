@@ -23,7 +23,7 @@ const BlogCard = ({cardInfo, orientation}) => {
         ` }> 
         </div>
         <div className="p-7 md:w-2/3">
-          <h1 className="uppercase text-3xl py-2 tracking-wider text-blueGray-2 font-semibold">{header}</h1>
+          <h1 className="uppercase text-xl md:text-3xl py-2 tracking-wider text-blueGray-2 font-semibold">{header}</h1>
           <p className="py-1 uppercase leading-loose text-blueGray-1">{preview}</p>
         </div>
       </div>

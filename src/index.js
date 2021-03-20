@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './tailwind.generated.css'
 
 import { BrowserRouter as Router } from "react-router-dom";
-import "./index.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

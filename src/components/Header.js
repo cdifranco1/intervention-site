@@ -12,7 +12,7 @@ export function Header() {
   return (
     <div className="py-4 px-5">
       <header className="flex flex-row justify-between items-center">
-        <div className="w-2/3 flex flex-row items-center">
+        <div className="w-4/5 flex flex-row items-center">
           <Link to="/" className="w-2/5 md:w-1/5">
             <img className="object-cover" src={Script} />
           </Link>

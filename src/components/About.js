@@ -1,20 +1,17 @@
-import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import headshot from "../assets/img/headshot.jpg"
 
 const About = () => {  
   return (
     <div className="py-10 bg-gray-100 px-1/12">
       <div className="flex flex-col items-center md:items-start md:flex-row">
-        <div className="mb-7 w-5/8 md:w-1/4 relative">
-          {/* <div className="bg-headshot bg-cover bg-center relative w-1/3" alt={"Tyler Fahey"}>
-          </div> */}
-          <img src={headshot} />
-          <div className="bg-primary-gray p-4" style={{borderRadius: "0px 0px 100px 0px"}}>
+        <div className="mb-7 w-6/8 md:w-2/5 relative p-5">
+          <img src={headshot} alt="Tyler Fahey" />
+          <div className="bg-primary-gray p-4" style={{borderRadius: "0px 0px 60px 0px"}}>
             <span className="uppercase text-lg block text-white font-bold tracking-wide">Tyler Fahey</span>
             <span className="uppercase text-lg block text-white tracking-wider">Founder / Interventionist</span>
           </div>
         </div>
-        <div className="md:w-8/12 leading-loose ml-20">
+        <div className="md:w-8/12 leading-loose">
           <h2 className="text-gray-700 tracking-wider text-4xl mb-7 text-center md:text-left uppercase">About Tyler and His Intervention Methodology</h2>
           <p className="mb-5 text-blueGray-1">Tyler comes from a family where addiction is prevalent.  His personal experiences in an alcoholic home help him relate to family members of the alcoholic or addict.  He understands what this disease can do to a family system and how much work goes into healing everyone involved.  Through these experiences, he recognizes that addiction cases are time-sensitive and stressful. </p>  
           

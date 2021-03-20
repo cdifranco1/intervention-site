@@ -36,7 +36,6 @@ export default function SimpleMenu() {
     window.addEventListener('click', () => setShowServiceOptions(false));
   };
 
-
   return (
     <div ref={outerContainer}>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
