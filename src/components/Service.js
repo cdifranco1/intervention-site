@@ -51,7 +51,7 @@ export const Service = ({serviceName, subheader, subDescription, paragraphs, img
             "bg-coaching" :
             "bg-assessment"
           }
-          bg-cover relative mb-5 bg-center h-100
+          bg-cover mb-5 bg-center w-full relative py-1/2
         `}
       >
       </div>
