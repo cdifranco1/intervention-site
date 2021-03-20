@@ -95,7 +95,7 @@ export default () => {
       <div className="bg-gradient-to-r from-primary-blue to-blueGray-1 text-white tracking-wide mt-5 w-full relative py-20 flex flex-col items-center text-center">
         <h1 className="uppercase text-4xl py-5">Family Resources</h1>
         <div className="bg-gray-200" style={{height: "2px", width: "300px"}}></div>
-        <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved ones need. Below is a comprehensive list of links to resources available for those affected by addiction and mental health. For any additional information about resources available, please contact us by phone or email.</p>
+        <p className="leading-loose py-5 px-1/12 text-xl">We understand how important it is to get the help that you and your loved ones need. Below is a comprehensive list of links to resources available for those affected by addiction and mental health challenges. For any additional information about resources available, please contact us by phone or email.</p>
       </div>
       <div className="py-10 px-6 md:px-24">
         {RESOURCES.map(el => {

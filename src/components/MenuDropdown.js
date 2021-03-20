@@ -4,21 +4,14 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
-import { Popper } from "./DropdownV2";
+import { Popper } from "./ServicesDropdown";
 import { makeStyles } from '@material-ui/core';
-
-// 1: '#68808f',
-//     2: '#ced9e1',
 
 const useStyles = makeStyles({
   menuItem: {
     color: '#68808f'
   }
 })
-
-const StyledDropdownButton = ({ children, ariaControls, ariaHaspopup, onClick }) => 
-  <button aria-controls="simple-menu" aria-haspopup="true" onClick={onClick} >{ children }</button>
-
 
 export default function SimpleMenu() {
   const classes = useStyles();
@@ -50,7 +43,6 @@ export default function SimpleMenu() {
         <MenuIcon fontSize={'large'} />
       </Button>
       <Menu
-        className={classes.menu}
         id="simple-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -71,7 +63,6 @@ export default function SimpleMenu() {
           <MenuItem className={classes.menuItem} onClick={handleClose}>Resources</MenuItem>
         </Link>
       </Menu>
-
       <Popper 
         anchorEl={outerContainer} 
         context={"mobile"} 

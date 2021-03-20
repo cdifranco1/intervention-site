@@ -3,7 +3,6 @@
 // 200: '#e2e8f0',
 
 const ServiceIcon = ({shadowType, footer}) => {
-  console.log(footer);
   return (
     <svg xmlns="http://www.w3.org/2000/svg" 
       className={`

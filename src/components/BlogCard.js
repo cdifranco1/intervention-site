@@ -10,7 +10,7 @@ const BlogCard = ({cardInfo, orientation}) => {
 
   return (
     <Link to={linkPath} >
-      <div className={`flex flex-col ${orientation === "right" ? "md:flex-row" : "md:flex-row-reverse"} ? w-full my-4 border-1 shadow-lg bg-white hover:shadow-xl`}>
+      <div className={`flex flex-col ${orientation === "right" ? "md:flex-row" : "md:flex-row-reverse"} ? w-full my-6 border-1 shadow-lg bg-white hover:shadow-xl`}>
         <div className={`
           bg-cover bg-center relative w-full py-24 md:w-1/3
           ${
