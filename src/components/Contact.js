@@ -1,12 +1,14 @@
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
+const INITIAL_STATE = {
+  user_name: "",
+  user_email: "",
+  message: ""
+};
+
 const Contact = () => {
-  const [ state, setState ] = useState({
-    user_name: "",
-    user_email: "",
-    message: ""
-  });
+  const [ state, setState ] = useState(INITIAL_STATE);
 
   const handleFormChange = (e) => {
     setState({
@@ -17,9 +19,9 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    console.log(state);
     emailjs.send("service_195kjs9", "contact_form", state, "user_QmOpOMxPzbv3nPEhopp5T");
+
+    setState(INITIAL_STATE);
   }
 
 
