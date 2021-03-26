@@ -1,9 +1,9 @@
 import { Route, useRouteMatch } from 'react-router-dom';
 import { Service } from "./Service";
 
-import HeaderInterventionImage from "../assets/img/HeaderInterventionImage.png"
-import HeaderSoberCoachingImage from "../assets/img/HeaderSoberCoachingImage.png"
-import HeaderAssessmentPlacementImage from "../assets/img/HeaderAssessmentPlacementImage.png"
+import HeaderInterventionImage from "../assets/img/HeaderInterventionImage.JPEG"
+import HeaderSoberCoachingImage from "../assets/img/HeaderSoberCoachingImage.JPEG"
+import HeaderAssessmentPlacementImage from "../assets/img/HeaderAssessmentPlacementImage.JPEG"
 
 
 const SERVICES = [

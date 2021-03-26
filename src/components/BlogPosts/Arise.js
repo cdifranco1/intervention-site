@@ -1,4 +1,4 @@
-import blogImage3 from "../../assets/img/blogImage3.jpg";
+import blogImage3 from "../../assets/img/blogImage3.JPEG";
 import { StdParagraph, BlogHeader, StyledH2, StyledSection, BlogList, StyledList, ListItem } from "./utils";
 
 const AriseIntervention = () => 
