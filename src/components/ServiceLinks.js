@@ -1,22 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import ServiceIcon from "./ServiceIcon";
-
-
-const SERVICES = [
-  {
-    name: "Assessment & Placement",
-    path: "/assessment-and-placement"
-  },
-  {
-    name: "Intervention",
-    path: "/interventions"
-  },
-  {
-    name: "Sober Coaching",
-    path: "/sober-coaching"
-  },
-]
+import { SERVICES } from "../constants/content";
 
 const ServiceLink = (props) => {
   const containerRef = useRef(null);
@@ -47,7 +32,7 @@ const ServiceLinks = () => {
   return (
     <div className="flex flex-col items-center md:flex-row justify-evenly mb-12 mt-7">
       {SERVICES.map((el, i) => 
-        <ServiceLink key={`${el}+${i}`} path={`/services${el.path}`} name={el.name} />  
+        <ServiceLink key={`${el}+${i}`} path={`${el.route}`} name={el.serviceName} />  
         )}
     </div>
   )

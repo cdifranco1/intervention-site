@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { SERVICES } from "../constants/content";
+// import ROUTES from "../constants/routes.json";
 
 const ServiceLink = ({onClick, path, children}) => {
   return (
     <li onClick={onClick}>
-      <Link className="hover:bg-blueGray-100 py-1 px-2 block text-blueGray-1" to={path}>{children}</Link>
+      <Link className="hover:bg-blueGray-100 py-1 px-2 block text-blueGray-1 w-full" to={path}>{children}</Link>
     </li>
   )
 };
@@ -47,25 +49,25 @@ export const Popper = (props) => {
     const position = el.current.getBoundingClientRect()
     if (props.context === "mobile"){
       return ({
-        top: `${position.top + 80}px`,
-        left: `${position.left - 255}px`
+        top: `${position.top + 100}px`,
+        left: `${position.left - 225}px`
       })
     }
 
     return {
-      top: `${position.top + 30}px`,
-      left: `${position.left - 100}px`
+      top: `${position.top + 35}px`,
+      left: `${position.left - 50}px`
     }
   }
 
   return (
     <>
     {props.isOpen && (
-      <div className="bg-white rounded-md shadow-2xl overflow-hidden py-3" style={{zIndex: 2000, position: "absolute", top: getPos(props.anchorEl).top, left: getPos(props.anchorEl).left, boxShadow: "0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%)"}}>
+      <div className="bg-white rounded-md shadow-2xl w-48 sm: overflow-hidden py-3" style={{zIndex: 2000, position: "absolute", top: getPos(props.anchorEl).top, left: getPos(props.anchorEl).left, boxShadow: "0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%)"}}>
         <ul>
-          <ServiceLink onClick={handleClick} path="/services/interventions">Interventions</ServiceLink>
-          <ServiceLink onClick={handleClick} path="/services/sober-coaching">Sober Coaching</ServiceLink>
-          <ServiceLink onClick={handleClick} path="/services/assessment-and-placement">Assessment and Placement</ServiceLink>
+          {SERVICES.map(el => 
+            <ServiceLink onClick={handleClick} path={`${el.route}`}>{el.serviceName}</ServiceLink>  
+            )}
         </ul>
       </div>
     )}

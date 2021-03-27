@@ -11,6 +11,8 @@ import ServiceLinks from "./components/ServiceLinks"
 import Resources from "./components/Resources"
 import Footer from "./components/Footer";
 
+import ROUTES from "./constants/routes.json";
+
 function App() {
   return (
     <div className="font-sans w-full">
@@ -23,18 +25,18 @@ function App() {
         <ServiceLinks />
         <BlogCardContainer />
       </Route>
-      <Route path="/about">
+      <Route path={`${ROUTES.About}`}>
         <About />
       </Route>
-      <Route path="/services">
+      <Route path={`${ROUTES.Services.BaseRoute}`}>
         <Services />
       </Route>
 
-      <Route path="/blog">
+      <Route path={`${ROUTES.Blog}`}>
         <BlogHome />
       </Route> 
       
-      <Route path="/resources">
+      <Route path={`${ROUTES.Resource}`}>
         <Resources />
       </Route> 
       <ContactSection />

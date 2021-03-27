@@ -1,0 +1,13 @@
+
+{
+  "Home": "/",
+  "About":"/about",
+  "Services": {
+    "BaseRoute": "/services",
+    "Interventions": "/interventions",
+    "SoberCoaching": "/sober-coaching",
+    "TreatmentAndPlacement": "/treatment-placement"
+  },
+  "Blog": "/blog",
+  "Resource": "/resources"
+}
