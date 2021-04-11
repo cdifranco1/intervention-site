@@ -6,14 +6,28 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Router>,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  ReactDOM.hydrate(
+    <Router>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Router>,
+    rootElement
+  );
+} else {
+  ReactDOM.render(
+    <Router>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Router>,
+    rootElement
+  );
+}
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

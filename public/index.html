@@ -47,7 +47,8 @@
 
       function gtag_report_conversion(conversionId) {
         gtag('event', 'conversion', {
-          'send_to': `${AW_TAG}/${conversionId}`
+          'send_to': `${AW_TAG}/${conversionId}`,
+          'event_callback': () => {}
         });
 
         return false;

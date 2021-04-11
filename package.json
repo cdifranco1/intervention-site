@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build:tailwind": "postcss src/assets/tailwind.css -o src/tailwind.generated.css",
+    "postbuild": "react-snap",
     "watch:tailwind": "postcss -w src/assets/tailwind.css -o src/tailwind.generated.css",
     "start": "run-p watch:tailwind start:react",
     "start:react": "react-scripts start",
@@ -46,6 +47,7 @@
     "autoprefixer": "^10.0.2",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.3.0",
+    "react-snap": "^1.23.0",
     "tailwindcss": "^2.0.1"
   }
 }
