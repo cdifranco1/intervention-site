@@ -8,6 +8,9 @@ const INITIAL_STATE = {
   phone: ""
 };
 
+const CONVERSION_ID = 'Kc5KCNum3_0BEOze6scB';
+
+
 const Contact = () => {
   const [ state, setState ] = useState(INITIAL_STATE);
 
@@ -21,8 +24,9 @@ const Contact = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     emailjs.send("service_195kjs9", "contact_form", state, "user_QmOpOMxPzbv3nPEhopp5T");
-
+    
     setState(INITIAL_STATE);
+    window.gtag_report_conversion(CONVERSION_ID)
   }
 
 

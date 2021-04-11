@@ -32,11 +32,26 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7T67J58VZZ"></script>
     <script>
+      GA_TAG = 'G-7T67J58VZZ';
+      AW_TAG = 'AW-419082092';
+
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(...args){
+        dataLayer.push(...args);
+      }
+
       gtag('js', new Date());
 
-      gtag('config', 'G-7T67J58VZZ');
+      gtag('config', GA_TAG);
+      gtag('config', AW_TAG);
+
+      function gtag_report_conversion(conversionId) {
+        gtag('event', 'conversion', {
+          'send_to': `${AW_TAG}/${conversionId}`
+        });
+
+        return false;
+      };
     </script>
   </head>
   <body>
