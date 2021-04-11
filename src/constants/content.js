@@ -1,6 +1,6 @@
-import HeaderInterventionImage from "../assets/img/HeaderInterventionImage.JPEG"
-import HeaderSoberCoachingImage from "../assets/img/HeaderSoberCoachingImage.JPEG"
-import HeaderAssessmentPlacementImage from "../assets/img/HeaderAssessmentPlacementImage.JPEG"
+import HeaderInterventionImage from "../assets/img/HeaderInterventionImage_2.jpg"
+import HeaderSoberCoachingImage from "../assets/img/HeaderSoberCoachingImage_2.jpg"
+import HeaderAssessmentPlacementImage from "../assets/img/HeaderAssessmentPlacementImage_2.jpg"
 
 import  ROUTES from "./routes.json";
 

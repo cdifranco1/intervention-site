@@ -7,18 +7,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-      'hero-image': "url('assets/img/mountains.JPEG')",
-      'hero-image-2': "url('assets/img/sunset.JPEG')",
       'headshot': "url('assets/img/headshot.JPEG')",
       'sober-living-blog': "url('assets/img/soberLivingBlog.JPEG')",
       'intervention-blog': "url('assets/img/whyCallInterventionistBlog.JPEG')",
       'blog-image-3': "url('assets/img/blogImage3.JPEG')",
-      'lighthouse': "url('assets/img/LighthouseHeader.JPEG')",
-      'sky': "url('assets/img/sky.JPEG')",
-      'interventions': "url('assets/img/HeaderInterventionImage.JPEG')",
-      'assessment': "url('assets/img/HeaderAssessmentPlacementImage.JPEG')",
-      'resources': "url('assets/img/HeaderFamilyResourcesImage.JPEG')",
-      'coaching': "url('assets/img/HeaderSoberCoachingImage.JPEG')",
+      'lighthouse': "url('assets/img/LighthouseHeader_2.jpg')",
+      'interventions': "url('assets/img/HeaderInterventionImage_2.jpg')",
+      'assessment': "url('assets/img/HeaderAssessmentPlacementImage_2.jpg')",
+      'resources': "url('assets/img/HeaderFamilyResourcesImage_2.jpg')",
+      'coaching': "url('assets/img/HeaderSoberCoachingImage_2.jpg')",
      }),
      spacing: {
         '1/2': '50%',

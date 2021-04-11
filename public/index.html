@@ -36,8 +36,8 @@
       AW_TAG = 'AW-419082092';
 
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args){
-        dataLayer.push(...args);
+      function gtag(){
+        dataLayer.push(arguments);
       }
 
       gtag('js', new Date());
