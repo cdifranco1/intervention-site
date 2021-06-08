@@ -6,9 +6,9 @@ const BlogCardContainer = () => {
     <div className="bg-primary-gray py-10 px-1/12">
       <h2 className="text-white tracking-widest text-3xl font-sans uppercase font-semibold">Featured Blog Posts</h2>
       <div className="flex flex-col py-4 mb-2">
-        {CARD_DETAILS.map((el, i) => {
+        {CARD_DETAILS.filter(el => el.featured).map((el, i) => {
           let orientation;
-          if (i % 2 == 0) {
+          if (i % 2 === 0) {
             orientation = "right";
           } else {
             orientation = "left"

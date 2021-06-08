@@ -7,6 +7,7 @@ import Arise from "./BlogPosts/Arise"
 import WhyCallInterventionist from "./BlogPosts/WhyCallInterventionist"
 
 import BlogCardContainer from "./BlogCardContainer";
+import UnderstandingAddiction from "./BlogPosts/UnderstandingAddiction"
 
 
 
@@ -20,8 +21,8 @@ const BlogHome = () =>
     </Route>
     <div className="bg-blueGray-2">
       <div className="py-10 px-1/6 text-gray-800">
-        <Route path={`/blog/${BLOG_ROUTES.WHAT_IS_SOBER_LIVING}`}>
-          <WhatIsSoberLiving />
+        <Route path={`/blog/${BLOG_ROUTES.UNDERSTANDING_ADDICTION}`}>
+          <UnderstandingAddiction />
         </Route>
         <Route path={`/blog/${BLOG_ROUTES.WHY_CALL_INTERVENTIONIST}`}>
           <WhyCallInterventionist />

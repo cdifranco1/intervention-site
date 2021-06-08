@@ -8,18 +8,14 @@ const BlogCard = ({cardInfo, orientation}) => {
   const blogPath = header.split(' ').map(el => el.toLowerCase()).join('-');
   const linkPath = `/blog/${blogPath}`;
 
+
+
   return (
     <Link to={linkPath} >
       <div className={`flex flex-col ${orientation === "right" ? "md:flex-row" : "md:flex-row-reverse"} ? w-full my-6 border-1 shadow-lg bg-white hover:shadow-xl`}>
         <div className={`
           bg-cover bg-center relative w-full py-24 md:w-1/3
-          ${
-            image === 1 ?
-            "bg-sober-living-blog" :
-            image === 2 ?
-            "bg-intervention-blog" :
-            "bg-blog-image-3"
-          }
+          ${image}
         ` }> 
         </div>
         <div className="p-7 md:w-2/3">

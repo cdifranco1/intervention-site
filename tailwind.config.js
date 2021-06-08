@@ -11,6 +11,7 @@ module.exports = {
       'sober-living-blog': "url('assets/img/soberLivingBlog.JPEG')",
       'intervention-blog': "url('assets/img/whyCallInterventionistBlog.JPEG')",
       'blog-image-3': "url('assets/img/blogImage3.JPEG')",
+      'understand-addiction-blog': "url('assets/img/UnderstandingAddictionBlog.jpeg')",
       'lighthouse': "url('assets/img/LighthouseHeader_2.jpg')",
       'interventions': "url('assets/img/HeaderInterventionImage_2.jpg')",
       'assessment': "url('assets/img/HeaderAssessmentPlacementImage_2.jpg')",
