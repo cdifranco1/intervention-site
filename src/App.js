@@ -27,7 +27,9 @@ function App() {
             <Mission />
           </div>
           <ServiceLinks />
-          <BlogCardContainer />
+          <div className="px-1/12 bg-blueGray-2">
+            <BlogCardContainer />
+          </div>
         </Route>
         <Route path={`${ROUTES.About}`}>
           <About />
