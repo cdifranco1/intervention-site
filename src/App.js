@@ -13,35 +13,40 @@ import Footer from "./components/Footer";
 
 import ROUTES from "./constants/routes.json";
 
+import ScrollToTop from "./ScrollRestore";
+
 function App() {
   return (
-    <div className="font-sans w-full">
-      <Header />
-      <Route exact path="/">
-        <CTA />
-        <div className="p-4">
-          <Mission />
-        </div>
-        <ServiceLinks />
-        <BlogCardContainer />
-      </Route>
-      <Route path={`${ROUTES.About}`}>
-        <About />
-      </Route>
-      <Route path={`${ROUTES.Services.BaseRoute}`}>
-        <Services />
-      </Route>
+    <>
+      <ScrollToTop />
+      <div className="font-sans w-full">
+        <Header />
+        <Route exact path="/">
+          <CTA />
+          <div className="p-4">
+            <Mission />
+          </div>
+          <ServiceLinks />
+          <BlogCardContainer />
+        </Route>
+        <Route path={`${ROUTES.About}`}>
+          <About />
+        </Route>
+        <Route path={`${ROUTES.Services.BaseRoute}`}>
+          <Services />
+        </Route>
 
-      <Route path={`${ROUTES.Blog}`}>
-        <BlogHome />
-      </Route> 
-      
-      <Route path={`${ROUTES.Resource}`}>
-        <Resources />
-      </Route> 
-      <ContactSection />
-      <Footer />
-    </div>
+        <Route path={`${ROUTES.Blog}`}>
+          <BlogHome />
+        </Route> 
+        
+        <Route path={`${ROUTES.Resource}`}>
+          <Resources />
+        </Route> 
+        <ContactSection />
+        <Footer />
+      </div>
+    </>
   );
 }
 
